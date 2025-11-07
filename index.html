@@ -11,10 +11,12 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- font awesome cdn -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- tostify -->
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 <body class="bg-[#f5fff6]">
     <!-- header section  -->
-    <header class="w-full min-h-12">
+    <header class="w-full min-h-12 text-r">
         <nav class="bg-white flex  flex-col md:flex-row justify-between items-center py-5 px-12">
             <div class="flex items-center gap-3">
                 <img src="./assets/logo.png" alt="" class="w-14">
@@ -23,13 +25,13 @@
                 </div>
             </div>
             <div class="flex items-center gap-6">
-                <div class="flex items-center gap-2 bg-[#cbebef59] px-5 py-3 rounded-3xl">
+                <div class="flex items-center gap-2 bg-[#cbebef59] md:px-5 px-8 py-3 rounded-3xl">
                     <span class="text-[1rem] text-black font-bold" id="heards">0</span>
-                    <img src="assets/heart.png" alt="" class="w-[25px]">
+                    <img src="assets/heart.png" alt="" class="w-[25px] pr-2 md:pr-0">
                 </div>
                 <div class="flex items-center gap-2 bg-[#cbebef59] px-5 py-3 rounded-3xl">
                     <span class="text-[1rem] text-black font-bold" id="coins">100</span>
-                    <img src="assets/coin.png" alt="" class="w-[25px]">
+                    <img src="assets/coin.png" alt="" class="w-[25px] pr-2 md:pr-0">
                 </div>
                 <div>
                     <button class="btn bg-[#00A63E] text-[1rem] font-semibold text-white py-6 px-8 rounded-3xl"><span id="copy-btn">0</span>Copy</button>
@@ -295,5 +297,7 @@
 
     <!-- js link -->
      <script src="./js/index.js"></script>
+     <!-- tostify -->
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 </html>
